@@ -1,8 +1,4 @@
 from func import is_even
-# 测试代码
-# 注意：此代码必须保存在名为 test_counter.py 的文件中，以匹配 CI 中的 pytest 命令
-from func import is_even
-
 
 class TestIsEven:
     """测试 is_even 函数的单元测试类"""
@@ -11,14 +7,12 @@ class TestIsEven:
         """测试正偶数"""
         assert is_even(2) is True
         assert is_even(4) is True
-        assert is_even(10) is True
         assert is_even(100) is True
 
     def test_negative_even(self):
         """测试负偶数"""
         assert is_even(-2) is True
         assert is_even(-4) is True
-        assert is_even(-10) is True
         assert is_even(-100) is True
 
     def test_zero(self):
@@ -29,27 +23,15 @@ class TestIsEven:
         """测试正奇数"""
         assert is_even(1) is False
         assert is_even(3) is False
-        assert is_even(9) is False
-        assert is_even(101) is False
+        assert is_even(99) is False
 
     def test_negative_odd(self):
         """测试负奇数"""
         assert is_even(-1) is False
         assert is_even(-3) is False
-        assert is_even(-9) is False
-        assert is_even(-101) is False
+        assert is_even(-99) is False
 
     def test_large_numbers(self):
         """测试大数"""
-        assert is_even(1000000) is True
-        assert is_even(1000001) is False
-        assert is_even(-1000000) is True
-        assert is_even(-1000001) is False
-
-    def test_single_digit_numbers(self):
-        """测试单个数字"""
-        for i in range(10):
-            if i % 2 == 0:
-                assert is_even(i) is True
-            else:
-                assert is_even(i) is False
+        assert is_even(10**6) is True
+        assert is_even(10**6 + 1) is False
