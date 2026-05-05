@@ -1,7 +1,5 @@
 from func import is_even
 # 测试代码
-# 请保存此代码到 test_counter.py
-
 from func import is_even
 
 class TestIsEven:
