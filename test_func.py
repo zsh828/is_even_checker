@@ -1,3 +1,4 @@
+from func import is_even
 # 测试代码
 from func import is_even
 import pytest
