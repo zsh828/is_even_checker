@@ -1,4 +1,8 @@
 from func import is_even
+# 测试代码
+# 请保存此代码到 test_counter.py
+
+from func import is_even
 
 class TestIsEven:
     """测试 is_even 函数的单元测试类"""
