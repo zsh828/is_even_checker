@@ -1,3 +1,6 @@
+# 功能代码
+# 请保存此代码到 func.py
+
 def is_even(number: int) -> bool:
     """
     判断一个数字是否为偶数。
